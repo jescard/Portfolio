@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jescard Tamer</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800'
+    rel='stylesheet' type='text/css'>
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+
+</head>
+
+<body>
+
+  <div class="overflow-wrap">
+
+    <!-- HOME -->
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal">
+        <div class="carousel-wrap">
+          <div class="window">
+            <div id="carousel">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <i class="mdi mdi-chevron-left" id="prev"></i>
+            <i class="mdi mdi-chevron-right" id="next"></i>
+          </div>
+
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+            <div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div>
+          </a>
+        </div>
+        <i class="close mdi mdi-close"></i>
+      </div>
+    </div>
+
+    <section id="home" class="flex height-fix">
+      <div id="pt" class="canvas"></div>
+      <div class="flex">
+
+        <div class="text">
+          Hello, I'm <span class="highlight">Jescard Tamer</span>.
+          <br>
+          I'm a full-stack Web, ML
+          <br>
+          and game developer.
+        </div>
+
+        <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
+
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" dest="home">home</div>
+            <div class="page-link" dest="about">about</div>
+            <div class="page-link" dest="portfolio">projects</div>
+
+          </div>
+          <i class="mdi mdi-menu"></i>
+        </nav>
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex">
+
+        <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+        <div class="flex row label-wrap">
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                <div class="hexagon">
+                  <i class="mdi mdi-speedometer"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in">
+                <div class="label bold">Fast Websites</div>
+                <div>Fast load times and lag free interaction, my highest priority.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                <div class="hexagon">
+                  <i class="mdi mdi-cellphone-link"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="label bold">Responsive Websites</div>
+                <div>My layouts will work on any device, big or small.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                <div class="hexagon">
+                  <i class="mdi mdi-lightbulb-outline"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                <div class="label bold">Smart AIs</div>
+                <div>Smart AIs with high accuracies</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                <div class="hexagon">
+                  <i class="mdi mdi-rocket"></i>
+                </div>
+              </div>
+              
+              <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                  <div class="label bold">Latest Technologies</div>
+                <div>Websites don't have to be static, I love making pages come to life.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me.png" class="me">
+            <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+            <div class="label bold">Who's this guy?</div>
+            <div>
+              I'm a full-stack web, machine learning and game developer with a BS in computer science.
+ 
+              I am constantly innovating and learning new technologies to be able to advise you and help you with your projects.
+              <br>
+              <a class="page-link highlight" href="./myCV.pdf" target="_blank">View my CV</a>
+            </div>
+          </div>
+
+          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Angular 8</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:85%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+              <span>85%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+              <span>75%</span>
+            </div>
+            
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">Bootstrap</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Java</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">C</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Unity</div>
+              </div>
+              <span>75%</span>
+            </div>
+
+            
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">Python</div>
+              </div>
+              <span>80%</span>
+            </div>
+ 
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+              <span>65%</span>
+            </div>
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">Node.js</div>
+              </div>
+              <span>65%</span>
+            </div>
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Laravel</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="flex" id="portfolio">
+
+      <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".node">WEBSITES</div>
+          <div class="filter" data-filter=".rails">MACHINE LEARNING</div>
+          <div class="filter" data-filter=".js">GAMES</div>
+        </div>
+        <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".node">WEBSITES</div>
+            <div class="filter" data-filter=".rails">MACHINE LEARNING</div>
+            <div class="filter" data-filter=".js">GAMES</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+        <div class="mix js" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Remaking of Stack game</div>
+              <span class="highlight">Unity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mix rails" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Sentiment Classifier based on hotels reviews</div>
+              <span class="highlight">Python</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mix node" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">E-Commerce Website</div>
+              <span class="highlight">Angular 8 + NodeJS</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Mr John Game</div>
+              <span class="highlight">Unity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mix rails" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Classifier predict customers that will leave the bank</div>
+              <span class="highlight">Python</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="mix node" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Startup Website</div>
+              <span class="highlight">Angular 8 + NodeJS</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="blog" class="test">
+      <div class="container flex">
+
+      </div>
+    </section>
+
+    <Section id="contact" style="height: 10px; padding: 0px;">
+
+    </Section>
+
+    <footer>
+      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+      <div class="icon-wrap flex row">
+        <a href="https://www.linkedin.com/in/jescard-tamer-298727181">
+          <div class="flex icon" id="icon-2">
+            <i class="mdi mdi-linkedin"></i>
+          </div>
+        </a>
+
+        
+        <a href="https://www.facebook.com/jescard.tamer">
+          <div class="flex icon" id="icon-3">
+            <i class="mdi mdi-facebook"></i>
+          </div>
+        </a>
+        <a href="https://instagram.com/jescard_tamer/">
+          <div class="flex icon" id="icon-4">
+            <i class="mdi mdi-instagram"></i>
+          </div>
+        </a>
+
+
+      </div>
+      <div class="info-box">
+        <div class="footnote">JESCARD TAMER <span class="highlight">&copy;2019</span></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="preload">
+    <img src="img/me.png" />
+    <img src="img/filler.html" />
+    <img src="img/thumb-1.jpg" />
+    <img src="img/thumb-2.jpg" />
+    <img src="img/thumb-3.jpg" />
+    <img src="img/thumb-4.jpg" />
+    <img src="img/thumb-5.jpg" />
+    <img src="img/thumb-6.jpg" />
+    <img src="img/blog-1.jpg" />
+    <img src="img/blog-2.jpg" />
+    <img src="img/blog-3.jpg" />
+    <img src="img/blog-4.jpg" />
+    <img src="img/slides/mystand-0.jpg" />
+    <img src="img/slides/mystand-1.jpg" />
+    <img src="img/slides/mystand-2.jpg" />
+    <img src="img/slides/never-0.jpg" />
+    <img src="img/slides/never-1.jpg" />
+    <img src="img/slides/never-2.jpg" />
+    <img src="img/slides/powur-0.jpg" />
+    <img src="img/slides/powur-1.jpg" />
+    <img src="img/slides/powur-2.jpg" />
+    <img src="img/slides/roambi-0.jpg" />
+    <img src="img/slides/roambi-1.jpg" />
+    <img src="img/slides/roambi-2.jpg" />
+    <img src="img/slides/themall-0.jpg" />
+    <img src="img/slides/themall-1.jpg" />
+    <img src="img/slides/themall-2.jpg" />
+    <img src="img/slides/walker-0.jpg" />
+    <img src="img/slides/walker-1.jpg" />
+    <img src="img/slides/walker-2.jpg" />
+  </div>
+
+</body>
+
+
+</html>
+
+<script src="./cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="./ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="./cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+<script src="./cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script src="scripts/pt.min.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/canvas.js"></script>
